@@ -27,6 +27,7 @@ const ContactList = () => {
     
     return (   
         <>
+            <h2>Contacts</h2>
              {isLoading && (<h2>loading...</h2>)}
                  <ul className={css.contactList}>
                      {(filteredContacts && filteredContacts.map(({ id, name, number }) => (

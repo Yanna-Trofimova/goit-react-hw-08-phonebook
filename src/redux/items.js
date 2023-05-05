@@ -2,12 +2,13 @@
 
 export const contactApi = createApi({
     reducerPath: 'contacts',
-    baseQuery: fetchBaseQuery({ baseUrl: 'https://6441a1be76540ce2257b9cb7.mockapi.io/contacts' }),
+    baseQuery: fetchBaseQuery({ baseUrl: 'https://connections-api.herokuapp.com' }),
     tagTypes:['Contacts'],
     endpoints: (builder) => ({
         fetchContacts: builder.query({
             query: () => '/contacts',
-            providesTags:['Contacts']
+            providesTags: ['Contacts']
+        
         }),
         deleteContact: builder.mutation({
             query: id => ({
