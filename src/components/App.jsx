@@ -25,7 +25,7 @@ export const App = () => {
                 <Filter/>
             <ContactList /> */}
           <Route path="/" element={<Layout/>} >
-            <Route index element={<div>Homeee</div>} />
+            <Route index element={<div>Homeee my</div>} />
               <Route path="register" element={<RegisterPage />} />
               <Route path="login" element={<LoginPage />} />
               {/* <Route path="/contacts" element={<CoctactsPage />} /> */}
